@@ -3,7 +3,7 @@ export const computeFibonacciNumber = (position: number, recursion: boolean = fa
     if (notNullPosition === null) {
         notNullPosition = 1;   
     }
-    if (recursion) return recursiveFibonacci(notNullposition);
+    if (recursion) return recursiveFibonacci(notNullPosition);
     if (notNullPosition === 0) {
         return 0;
     }
