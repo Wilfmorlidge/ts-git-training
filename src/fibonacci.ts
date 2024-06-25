@@ -19,11 +19,10 @@ export const computeFibonacciNumber = (position: number, recursion: boolean = fa
     let largeFibonacciNumber = 1;
 
     let currentPosition = 2;
-    while (currentPosition < notNullPosition) {
+    while (currentPosition < position) {
         const nextFibonacciNumber = smallFibonacciNumber + largeFibonacciNumber;
         smallFibonacciNumber = largeFibonacciNumber;
         largeFibonacciNumber = nextFibonacciNumber;
-        currentPosition += 1
     }
     return largeFibonacciNumber;
 };
