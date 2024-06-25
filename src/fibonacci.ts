@@ -18,18 +18,11 @@ export const computeFibonacciNumber = (position: number, recursion: boolean = fa
     let smallFibonacciNumber = 1;
     let largeFibonacciNumber = 1;
 
-    let smallFibonacciNumber = 1;
-    let largeFibonacciNumber = 1;
-
     let currentPosition = 2;
     while (currentPosition < position) {
         const nextFibonacciNumber = smallFibonacciNumber + largeFibonacciNumber;
         smallFibonacciNumber = largeFibonacciNumber;
         largeFibonacciNumber = nextFibonacciNumber;
-        const nextFibonacciNumber = smallFibonacciNumber + largeFibonacciNumber;
-        smallFibonacciNumber = largeFibonacciNumber;
-        largeFibonacciNumber = nextFibonacciNumber;
-        currentPosition++;
     }
     return largeFibonacciNumber;
 };
